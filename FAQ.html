@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="css/FAQ.css" />
+        <link rel="shortcut icon" href="images/icons/paw-print.png">
+        <title>Cats Blog</title>
+</head>
+
+<body>
+        <!-- HEADER -->
+        <header>
+                <!-- NAVBAR -->
+                <nav class="navbar" id="topnav">
+                        <!-- LOGO -->
+                        <div class="logo">
+                                <a href="index.html"><img src="images/icons/paw-print.png" alt="paw-print" width="32"
+                                                height="32">Cats
+                                        Blog</a>
+                        </div>
+
+                        <!-- NAVIGATION MENU -->
+                        <ul class="nav-links">
+
+                                <!-- CHECKBOX HAMBURGER -->
+                                <input type="checkbox" id="checkbox_toggle" />
+                                <label for="checkbox_toggle" class="hamburger">&#9776;</label>
+
+                                <!-- LINKS MENU -->
+                                <nav class="menu">
+
+                                        <li><a href="index.html"><img src="images/icons/home.png" alt="home" width="20"
+                                                                height="20">
+                                                        Home</a></li>
+                                        <li><a href="article.html"><img src="images/icons/article.png" alt="about"
+                                                                width="20" height="20">
+                                                        Article</a>
+                                        </li>
+                                        <li><a href="gallery.html"><img src="images/icons/gallery.png" alt="gallery"
+                                                                width="20" height="20">
+                                                        Gallery</a></li>
+                                        <li><a href="contact.html"><img src="images/icons/contact-mail.png"
+                                                                alt="contact-mail" width="20" height="20">
+                                                        Contact</a></li>
+                                        <li><a href="FAQ.html"><img src="images/icons/faq.png" alt="faq" width="20"
+                                                                height="20"> FAQ</a></li>
+                                        <nav>
+                        </ul>
+                </nav>
+        </header>
+        <!-- MAIN CONTANT -->
+        <main>
+                <!-- FAQ -->
+                <section class="faq">
+                        <h2 class="faq-logo">Frequently asked questions</h2>
+                        <br>
+                        <!-- FAQ 1 -->
+                        <details class="faq-item">
+                                <summary>What to feed a cat?</summary>
+                                <p>It's advisable to feed a cat high-quality cat food available in both dry and wet
+                                        forms. Foods containing essential nutrients such as protein, fats, vitamins, and
+                                        minerals are crucial for a cat's health. Always adjust the amount of food based
+                                        on the cat's age, weight, and activity level.</p>
+                        </details>
+                         <!-- FAQ 2 -->
+                        <details class="faq-item">
+                                <summary>What are a cat's essential needs?</summary>
+                                <p>Cats have basic needs such as a healthy diet, clean water, shelter, play, a place to
+                                        sleep, and veterinary care. It's also important to provide access to a
+                                        scratching post.</p>
+                        </details>
+                         <!-- FAQ 3 -->
+                        <details class="faq-item">
+                                <summary>How to take care of a cat's health?</summary>
+                                <p>Regular vet visits, vaccinations, prevention against fleas and ticks, and weight
+                                        control are key elements in caring for a cat's health.</p>
+                        </details>
+                         <!-- FAQ 4 -->
+                        <details class="faq-item">
+                                <summary>How to litter train a cat?</summary>
+                                <p>Placing the litter box in a quiet location, regular cleaning, and providing one
+                                        litter box per cat in the household are basic principles of litter training.
+                                        Avoid changing the litter box location unless necessary.</p>
+                        </details>
+                         <!-- FAQ 5 -->
+                        <details class="faq-item">
+                                <summary>Do cats need toys?</summary>
+                                <p>Yes, toys are important for a cat's mental and physical health. Toys help maintain
+                                        activity levels, develop hunting skills, and alleviate stress.</p>
+                        </details>
+                         <!-- FAQ 6 -->
+                        <details class="faq-item">
+                                <summary>How to raise a kitten?</summary>
+                                <p>Understanding the stages of a kitten's development, providing appropriate toys, and
+                                        early socialization are key to raising a kitten. Consistent and positive
+                                        training is crucial in the upbringing process.</p>
+                        </details>
+                </section>
+        </main>
+
+        <script>
+                document.addEventListener('DOMContentLoaded', function () {
+                    var faqItems = document.querySelectorAll('.faq-item');
+            
+                    faqItems.forEach(function (item) {
+                        var summary = item.querySelector('summary');
+                        var paragraph = item.querySelector('p');
+            
+                        summary.addEventListener('click', function () {
+                            if (item.open) {
+                                // Jeśli element jest otwarty, ustaw max-height na 0, aby schować zawartość
+                                paragraph.style.maxHeight = '0';
+                            } else {
+                                // W przeciwnym razie ustaw max-height na pełną wysokość, aby zjechać w dół
+                                paragraph.style.maxHeight = paragraph.scrollHeight + 'px';
+                            }
+                        });
+                    });
+                });
+            </script>
+
+        <!-- FOOTER -->
+        <footer>
+                <!-- SOCIAL BAR -->
+                <section class="social-bar">
+                        <h4>Follow us on various social media:</h4>
+                        <br>
+                        <div>
+                                <a href="" class="icons-social"><img src="images/social-media/facebook.png"
+                                                alt="facebook" width="40px"></a>
+                                <a href="" class="icons-social"><img src="images/social-media/instagram.png"
+                                                alt="instagram" width="40px"></a>
+                                <a href="" class="icons-social"><img src="images/social-media/twitter.png" alt="twitter"
+                                                width="40px"></a>
+                                <a href="" class="icons-social"><img src="images/social-media/tik-tok.png" alt="tik-tok"
+                                                width="40px"></a>
+                        </div>
+                </section>
+                <p>© 2023 Cats Blog.&nbsp;All rights reserved.</p>
+        </footer>
+
+</body>
+
+</html>

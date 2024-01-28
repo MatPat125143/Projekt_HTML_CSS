@@ -1,0 +1,302 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background-image: linear-gradient(to bottom right, rgb(181, 226, 241), rgb(181, 193, 207), rgb(181, 226, 241));
+}
+
+header {
+    height: 70px;
+    margin: 0;
+    padding: 0;
+}
+
+
+/* NAVBAR STYLING */
+.navbar {
+    display: flex;
+    z-index: 2;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    width: 100%;
+    height: 55px;
+    padding: 20px;
+    background-color: lightslategray;
+    box-shadow: 0px 3px 2px rgb(84, 95, 107);
+    color: #fff;
+    border-bottom-left-radius: 7px;
+    border-bottom-right-radius: 7px;
+}
+
+.nav-links {
+    list-style: none;
+}
+
+.nav-links a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 20px;
+    text-align: justify;
+    text-shadow: 1px 1px 2px #b1b1b1;
+}
+
+/* ----------------------------------------------- */
+
+/* LOGO */
+.logo {
+    display: flex;
+    line-height: 40px;
+    font-size: 32px;
+    text-shadow: 1px 1px 2px #b1b1b1;
+}
+
+.logo a {
+    color: #fff;
+    line-height: 40px;
+    font-size: 40px;
+    text-decoration: none;
+    padding: 4px 4px;
+}
+
+.logo a:hover {
+    color: rgb(97, 170, 194);
+    text-shadow: 1px 1px 2px rgb(72, 124, 141);
+    transition: 0.3s ease;
+}
+
+/* ----------------------------------------------- */
+
+/* NAVBAR MENU */
+.menu {
+    display: flex;
+    gap: 2px;
+    font-size: 18px;
+}
+
+.menu li:hover {
+    background-color: lightsteelblue;
+    border-radius: 5px;
+    transition: 0.3s ease;
+}
+
+.menu li {
+    padding: 4px 14px;
+}
+
+/* ----------------------------------------------- */
+
+/* CHECKBOX HAMBURGER */
+input[type=checkbox] {
+    display: none;
+}
+
+/* ----------------------------------------------- */
+
+/* HAMBURGER MENU */
+.hamburger {
+    display: none;
+    font-size: 24px;
+    text-shadow: 1px 1px 2px #b1b1b1;
+    user-select: none;
+}
+
+/* ----------------------------------------------- */
+
+/* MAIN CONTENT */
+main {
+    flex: 1;
+}
+/* ----------------------------------------------- */
+
+/* FORM */
+form {
+    max-width: 700px;
+    width: 100%;
+    padding: 20px;
+    color: #fff;
+    background-color:  rgb(97, 170, 194);
+    box-shadow: 5px 5px 8px rgb(77, 131, 150);
+    border-radius: 10px;
+    margin: 50px auto;
+}
+
+label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+input, textarea, select {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+}
+
+.radio-options, .message1, .message2 {
+    display: none;
+    margin-top: 10px;
+}
+
+.radio-options label {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.radio-options input {
+    margin-top: 0;
+    margin-right: 5px;
+    margin-bottom: 10px;
+
+}
+
+.message1 label, .message2 label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+    /* SUBMIT BUTTON */
+button {
+    background-color: #4caf50;
+    border-radius: 10px;
+    box-shadow: 3px 3px 2px #2b642d;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    width: 100%;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+
+/* SOCIAL BAR */
+.social-bar {
+    text-align: center;
+    color: #fff;
+}
+
+.social-bar h4 {
+    margin-bottom: -10px;
+}
+
+.icons-social {
+    margin: 0 4px;
+}
+
+/* ----------------------------------------------- */
+
+/* FOOTER */
+footer {
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    background-color: lightslategray;
+    text-align: center;
+    border-radius: 7px 7px 0 0;
+    box-shadow: 0px -3px 2px rgb(84, 95, 107);
+    padding: 10px;
+    color: #fff;
+}
+
+
+/* MEDIA QUERIES 850px*/
+@media (max-width: 850px) {
+
+    /* NAVBAR MENU */
+    .menu {
+        display: none;
+        position: absolute;
+        background-color: lightslategray;
+        right: 0;
+        left: 0;
+        text-align: center;
+        padding: 5px 0;
+        border-radius: 0px 0px 7px 7px;
+        margin-top: 5px;
+    }
+
+    .menu li:hover {
+        display: inline-block;
+        background-color: lightsteelblue;
+        transition: 0.3s ease;
+    }
+
+    .menu li+li {
+        margin-top: 10px;
+    }
+
+    /* ----------------------------------------------- */
+
+    /* CHECKBOX HAMBURGER */
+    input[type=checkbox]:checked~.menu {
+        display: block;
+        box-shadow: 0px 3px 2px rgb(84, 95, 107);
+    }
+
+    /* ----------------------------------------------- */
+
+    /* HAMBURGER MENU */
+    .hamburger {
+        display: block;
+    }
+    /* ----------------------------------------------- */
+}
+
+
+@media (max-width: 450px) {
+
+    /* NAVBAR MENU */
+    .menu {
+        display: none;
+        position: absolute;
+        background-color: lightslategray;
+        right: 0;
+        left: 0;
+        text-align: center;
+        padding: 5px 0;
+        border-bottom-left-radius: 7px;
+        border-bottom-right-radius: 7px;
+        margin-top: 10px;
+    }
+
+    .menu li:hover {
+        display: inline-block;
+        background-color: lightsteelblue;
+        transition: 0.3s ease;
+    }
+
+    .menu li+li {
+        margin-top: 10px;
+    }
+
+    /* ----------------------------------------------- */
+
+    /* CHECKBOX HAMBURGER */
+    input[type=checkbox]:checked~.menu {
+        display: block;
+        box-shadow: 0px 3px 2px rgb(84, 95, 107);
+    }
+
+    /* ----------------------------------------------- */
+
+    /* HAMBURGER MENU */
+    .hamburger {
+        display: block;
+    }
+
+    /* ----------------------------------------------- */
+}

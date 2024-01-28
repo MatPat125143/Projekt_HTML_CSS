@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/contact.css" />
+    <link rel="shortcut icon" href="images/icons/paw-print.png">
+    <title>Cats Blog</title>
+</head>
+
+<body>
+    <!-- HEADER -->
+    <header>
+        <!-- NAVBAR -->
+        <nav class="navbar" id="topnav">
+            <!-- LOGO -->
+            <div class="logo">
+                <a href="index.html"><img src="images/icons/paw-print.png" alt="paw-print" width="32" height="32">Cats
+                    Blog</a>
+            </div>
+
+            <!-- NAVIGATION MENU -->
+            <ul class="nav-links">
+
+                <!-- CHECKBOX HAMBURGER -->
+                <input type="checkbox" id="checkbox_toggle" />
+                <label for="checkbox_toggle" class="hamburger">&#9776;</label>
+
+                <!-- LINKS MENU -->
+                <nav class="menu">
+
+                    <li><a href="index.html"><img src="images/icons/home.png" alt="home" width="20" height="20">
+                            Home</a></li>
+                    <li><a href="article.html"><img src="images/icons/article.png" alt="about" width="20" height="20">
+                            Article</a>
+                    </li>
+                    <li><a href="gallery.html"><img src="images/icons/gallery.png" alt="gallery" width="20" height="20">
+                            Gallery</a></li>
+                    <li><a href="contact.html"><img src="images/icons/contact-mail.png" alt="contact-mail" width="20" height="20">
+                            Contact</a></li>
+                    <li><a href="FAQ.html"><img src="images/icons/faq.png" alt="faq" width="20" height="20"> FAQ</a></li>
+                    <nav>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <form id="myForm">
+            <label for="name">Name:</label>
+            <input type="text" name="name" pattern="[a-zA-Z0-9]{3,}" placeholder="Your name" required>
+            <label for="email">E-mail:</label>
+            <input type="email" id="email" name="email" pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$" placeholder="Your e-mail" required>
+            <label for="options">You are contacting us regarding ...</label>
+            <select id="options" name="options" onchange="showOptions()">
+                <option value="0" disabled selected>--Select option--</option>
+                <option value="1">I want to post a new article/photo</option>
+                <option value="2">There is an error on the website</option>
+                <option value="3">I want to ask something</option>
+            </select>
+        
+            <!-- Option 1 -->
+            <div class="radio-options" id="radioOptions">
+                <label for="radio1">Article</label>
+                <input type="radio" id="radio1" name="radioOption">
+                <label for="radio2">Photo</label>
+                <input type="radio" id="radio2" name="radioOption">
+            </div>
+        
+            <!-- Option 2 -->
+            <div class="message1" id="message1">
+                <label for="textareaOption2">Describe the problem that occurred on the website</label>
+                <textarea id="textareaOption2" name="textareaOption2" rows="4" cols="50"></textarea>
+            </div>
+        
+            <!-- Option 3 -->
+            <div class="message2" id="message2">
+                <label for="textareaOption3">What do you want to ask?</label>
+                <textarea id="textareaOption3" name="textareaOption3" rows="4" cols="50"></textarea>
+            </div>
+        
+            <button type="button" onclick="validateForm()">Submit</button>
+        </form>
+    </main>
+        
+        <script src="js/contact.js"></script>
+
+    <!-- FOOTER -->
+    <footer>
+        <!-- SOCIAL BAR -->
+        <section class="social-bar">
+            <h4>Follow us on various social media:</h4>
+            <br>
+            <div>
+                <a href="" class="icons-social"><img src="images/social-media/facebook.png" alt="facebook"
+                        width="40px"></a>
+                <a href="" class="icons-social"><img src="images/social-media/instagram.png" alt="instagram"
+                        width="40px"></a>
+                <a href="" class="icons-social"><img src="images/social-media/twitter.png" alt="twitter"
+                        width="40px"></a>
+                <a href="" class="icons-social"><img src="images/social-media/tik-tok.png" alt="tik-tok"
+                        width="40px"></a>
+            </div>
+        </section>
+        <p>© 2023 Cats Blog.&nbsp;All rights reserved.</p>
+    </footer>
+
+</body>
+
+</html>
