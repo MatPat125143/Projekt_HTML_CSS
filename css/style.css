@@ -2,7 +2,6 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
 body {
@@ -10,18 +9,18 @@ body {
     padding: 0;
     height: 100%;
     min-height: 100vh;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     display: flex;
     flex-direction: column;
     background-image: linear-gradient(to bottom right, rgb(181, 226, 241), rgb(181, 193, 207), rgb(181, 226, 241));
 }
 
 header {
-    height: 100px;
+    height: 70px;
     margin: 0;
     padding: 0;
 }
 
-/* NAVBAR STYLING */
 .navbar {
     display: flex;
     z-index: 2;
@@ -50,9 +49,6 @@ header {
     text-shadow: 1px 1px 2px #b1b1b1;
 }
 
-/* ----------------------------------------------- */
-
-/* LOGO */
 .logo {
     display: flex;
     line-height: 40px;
@@ -74,9 +70,6 @@ header {
     transition: 0.3s ease;
 }
 
-/* ----------------------------------------------- */
-
-/* NAVBAR MENU */
 .menu {
     display: flex;
     gap: 2px;
@@ -93,16 +86,10 @@ header {
     padding: 4px 14px;
 }
 
-/* ----------------------------------------------- */
-
-/* CHECKBOX HAMBURGER */
 input[type=checkbox] {
     display: none;
 }
 
-/* ----------------------------------------------- */
-
-/* HAMBURGER MENU */
 .hamburger {
     display: none;
     font-size: 24px;
@@ -110,9 +97,10 @@ input[type=checkbox] {
     user-select: none;
 }
 
-/* ----------------------------------------------- */
+main {
+    flex: 1;
+}
 
-/* SLIDER CONTAINTE */
 .slideshow-images {
     display: block;
     height: auto;
@@ -177,16 +165,13 @@ input[type=checkbox] {
     height: auto;
 }
 
-/* ----------------------------------------------- */
-
-/* MAIN CONTENT */
-.article-title {
+.article-link-title {
     font-size: xx-large;
     text-shadow: 1px 1px 2px #b1b1b1;
     padding-bottom: 10px;
 }
 
-.article-container {
+.article-link-container {
     color: #fff;
     position: relative;
     background-color: rgb(97, 170, 194);
@@ -197,18 +182,14 @@ input[type=checkbox] {
 
 }
 
-.article-art {
+.article-link-art {
     display: grid;
     grid-template-columns: auto auto auto;
     justify-content: center;
     gap: 20px;
 }
 
-.overlay {
-    display: none;
-}
-
-.overlay {
+.overlay-link {
     display: none;
     position: absolute;
     top: 0;
@@ -220,7 +201,7 @@ input[type=checkbox] {
     animation: fadeInOverlay 0.5s ease-in-out;
 }
 
-.article-content:hover .overlay {
+.article-link-content:hover .overlay-link {
     display: block;
     opacity: 1;
 }
@@ -246,7 +227,7 @@ input[type=checkbox] {
     }
 }
 
-.article-content {
+.article-link-content {
     background-color: rgb(72, 124, 141);
     box-shadow: 3px 3px 2px rgb(48, 82, 94);
     border-radius: 25px;
@@ -261,7 +242,7 @@ input[type=checkbox] {
     margin-bottom: 20px;
 }
 
-.art-item {
+.art-link-item {
     display: flex;
     flex-direction: column;
     text-align: center;
@@ -269,22 +250,19 @@ input[type=checkbox] {
     gap: 10px;
 }
 
-.art-text p{
+.art-link-text p{
     font-size: 16px;
 }
-.art-text {
+.art-link-text {
     font-size: 18px;
 }
 
-.art-img {
+.art-link-img {
     min-height: 100px;
     border-radius: 20px;
     box-shadow: 3px 3px 2px rgb(48, 82, 94);
 }
 
-/* ----------------------------------------------- */
-
-/* SOCIAL BAR */
 .social-bar {
     text-align: center;
     color: #fff;
@@ -298,9 +276,6 @@ input[type=checkbox] {
     margin: 0 4px;
 }
 
-/* ----------------------------------------------- */
-
-/* FOOTER */
 footer {
     position: relative;
     bottom: 0;
@@ -313,29 +288,19 @@ footer {
     color: #fff;
 }
 
-/* ----------------------------------------------- */
-
-/* MEDIA QUERIES 1200px*/
 @media (max-width: 1200px) {
 
-    /* MAIN CONTENT */
-    .article-art {
+    .article-link-art {
         display: grid;
         grid-template-columns: auto auto;
         justify-content: center;
         gap: 20px;
     }
 
-
-    /* ----------------------------------------------- */
 }
 
-/* ----------------------------------------------- */
-
-/* MEDIA QUERIES 850px*/
 @media (max-width: 850px) {
 
-    /* NAVBAR MENU */
     .menu {
         display: none;
         position: absolute;
@@ -358,31 +323,23 @@ footer {
         margin-top: 10px;
     }
 
-    /* ----------------------------------------------- */
-
-    /* CHECKBOX HAMBURGER */
     input[type=checkbox]:checked~.menu {
         display: block;
         box-shadow: 0px 3px 2px rgb(84, 95, 107);
     }
 
-    /* ----------------------------------------------- */
-
-    /* HAMBURGER MENU */
     .hamburger {
         display: block;
     }
-    /* ----------------------------------------------- */
 
-    /* MAIN CONTENT */
-    .article-art {
+    .article-link-art {
         display: grid;
         grid-template-columns: auto;
         justify-content: center;
         gap: 10px;
     }
 
-    .art-img {
+    .art-link-img {
         max-width: 70%;
         height: auto;
         display: flex;
@@ -390,16 +347,13 @@ footer {
         align-items: center;
     }
 
-    .art-item {
+    .art-link-item {
         gap: 5px;
     }
-
-    /* ----------------------------------------------- */
 }
 
 @media (max-width: 450px) {
 
-    /* NAVBAR MENU */
     .menu {
         display: none;
         position: absolute;
@@ -423,32 +377,23 @@ footer {
         margin-top: 10px;
     }
 
-    /* ----------------------------------------------- */
-
-    /* CHECKBOX HAMBURGER */
     input[type=checkbox]:checked~.menu {
         display: block;
         box-shadow: 0px 3px 2px rgb(84, 95, 107);
     }
 
-    /* ----------------------------------------------- */
-
-    /* HAMBURGER MENU */
     .hamburger {
         display: block;
     }
 
-    /* ----------------------------------------------- */
-
-    /* MAIN CONTENT */
-    .article-art {
+    .article-link-art {
         display: grid;
         grid-template-columns: auto;
         justify-content: center;
         gap: 20px;
     }
 
-    .article-content {
+    .article-link-content {
         display: grid;
         grid-template-columns: auto;
         position: relative;
@@ -459,7 +404,7 @@ footer {
         margin-bottom: 20px;
     }
 
-    .art-img {
+    .art-link-img {
         max-width: 70%;
         height: auto;
         margin: 0 auto;
@@ -468,7 +413,4 @@ footer {
         align-items: center;
     }
 
-    /* ----------------------------------------------- */
 }
-
-/* ----------------------------------------------- */

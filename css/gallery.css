@@ -177,8 +177,6 @@ main {
     max-height: 100%;
 }
 
-
-/* SOCIAL BAR */
 .social-bar {
     text-align: center;
     color: #fff;
@@ -192,9 +190,6 @@ main {
     margin: 0 4px;
 }
 
-/* ----------------------------------------------- */
-
-/* FOOTER */
 footer {
     position: relative;
     bottom: 0;
@@ -207,14 +202,12 @@ footer {
     color: #fff;
 }
 
-/* MEDIA QUERIES 1200px*/
 @media (max-width: 1200px) {
     .gallery {
         max-width: 80%;
     }
 }
 
-/* MEDIA QUERIES 850px*/
 @media (max-width: 850px) {
 
     /* NAVBAR MENU */
@@ -240,17 +233,11 @@ footer {
         margin-top: 10px;
     }
 
-    /* ----------------------------------------------- */
-
-    /* CHECKBOX HAMBURGER */
     input[type=checkbox]:checked~.menu {
         display: block;
         box-shadow: 0px 3px 2px rgb(84, 95, 107);
     }
 
-    /* ----------------------------------------------- */
-
-    /* HAMBURGER MENU */
     .hamburger {
         display: block;
     }
@@ -266,35 +253,8 @@ footer {
     }
 }
 
-@media (max-width: 760px) {
-    .article-art {
-        display: grid;
-        grid-template-columns: auto;
-        justify-content: center;
-        gap: 20px;
-    }
-
-    .article-content {
-        display: grid;
-        grid-template-columns: auto;
-        position: relative;
-        width: auto;
-        height: auto;
-        padding: 25px;
-        gap: 10px;
-        margin-bottom: 20px;
-    }
-
-    .art-img {
-        min-height: 100px;
-        width: 50%;
-        margin-bottom: 10px;
-    }
-}
-
 @media (max-width: 450px) {
 
-    /* NAVBAR MENU */
     .menu {
         display: none;
         position: absolute;
@@ -318,21 +278,12 @@ footer {
         margin-top: 10px;
     }
 
-    /* ----------------------------------------------- */
-
-    /* CHECKBOX HAMBURGER */
     input[type=checkbox]:checked~.menu {
         display: block;
         box-shadow: 0px 3px 2px rgb(84, 95, 107);
     }
 
-    /* ----------------------------------------------- */
-
-    /* HAMBURGER MENU */
     .hamburger {
         display: block;
     }
-
-    /* ----------------------------------------------- */
-
 }

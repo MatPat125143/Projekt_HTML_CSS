@@ -1,0 +1,527 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <title>KSS Style Guide</title>
+
+  <meta name="description" content=""/>
+  <meta name="generator" content="kss-node"/>
+  <meta name="viewport" content="width=device-width"/>
+
+  <link rel="stylesheet" href="kss-assets/kss.css"/>
+  <link rel="stylesheet" href="../kss-style.css"/>
+
+</head>
+<body id="kss-node" >
+
+<div class="kss-sidebar kss-style">
+  <header class="kss-header">
+    <h1 class="kss-doc-title">KSS Style Guide</h1>
+  </header>
+  <nav class="kss-nav" aria-label="Style Guide">
+    <ul class="kss-nav__menu">
+      <li class="kss-nav__menu-item">
+        <a class="kss-nav__menu-link" href="./">
+          <span class="kss-nav__ref">0</span
+          ><span class="kss-nav__name">Overview</span>
+        </a>
+      </li>
+      <li class="kss-nav__menu-item">
+        <a class="kss-nav__menu-link" href="section-1.html">
+          <span class="kss-nav__ref">1</span><span class="kss-nav__name">Style ogólne</span>
+        </a>
+      </li>
+      <li class="kss-nav__menu-item">
+        <a class="kss-nav__menu-link" href="section-2.html">
+          <span class="kss-nav__ref">2</span><span class="kss-nav__name">Elementy dla wszystkich stron</span>
+        </a>
+            <ul class="kss-nav__menu-child">
+              <li class="kss-nav__menu-item">
+                <a class="kss-nav__menu-link" href="section-2.html#kssref-2-1">
+                  <span class="kss-nav__ref ">2.1</span
+                  ><span class="kss-nav__name">Navigation Bar</span>
+                </a>
+              </li>
+              <li class="kss-nav__menu-item">
+                <a class="kss-nav__menu-link" href="section-2.html#kssref-2-2">
+                  <span class="kss-nav__ref ">2.2</span
+                  ><span class="kss-nav__name">Navigation Bar Example</span>
+                </a>
+              </li>
+              <li class="kss-nav__menu-item">
+                <a class="kss-nav__menu-link" href="section-2.html#kssref-2-3">
+                  <span class="kss-nav__ref ">2.3</span
+                  ><span class="kss-nav__name">Footer</span>
+                </a>
+              </li>
+              <li class="kss-nav__menu-item">
+                <a class="kss-nav__menu-link" href="section-2.html#kssref-2-4">
+                  <span class="kss-nav__ref ">2.4</span
+                  ><span class="kss-nav__name">Footer Example</span>
+                </a>
+              </li>
+            </ul>
+      </li>
+      <li class="kss-nav__menu-item">
+        <a class="kss-nav__menu-link" href="section-3.html">
+          <span class="kss-nav__ref">3</span><span class="kss-nav__name">Strona główna</span>
+        </a>
+      </li>
+      <li class="kss-nav__menu-item">
+        <a class="kss-nav__menu-link" href="section-4.html">
+          <span class="kss-nav__ref">4</span><span class="kss-nav__name">Article.html</span>
+        </a>
+      </li>
+      <li class="kss-nav__menu-item">
+        <a class="kss-nav__menu-link" href="section-5.html">
+          <span class="kss-nav__ref">5</span><span class="kss-nav__name">Gallery.html</span>
+        </a>
+      </li>
+      <li class="kss-nav__menu-item">
+        <a class="kss-nav__menu-link" href="section-6.html">
+          <span class="kss-nav__ref">6</span><span class="kss-nav__name">Contact.html</span>
+        </a>
+      </li>
+      <li class="kss-nav__menu-item">
+        <a class="kss-nav__menu-link" href="section-7.html">
+          <span class="kss-nav__ref">7</span><span class="kss-nav__name">FAQ.html</span>
+        </a>
+      </li>
+    </ul>
+  </nav>
+</div>
+<main class="kss-main" aria-label="Content">
+  <article>
+
+    <div id="kssref-2" class="kss-section kss-section--depth-1 ">
+
+      <div class="kss-style">
+        <h1 class="kss-title kss-title--level-1">
+          <a class="kss-title__permalink" href="#kssref-2">
+            <span class="kss-title__ref">
+              2
+              <span class="kss-title__permalink-hash">
+                  #permalink
+              </span>
+            </span>
+            Elementy dla wszystkich stron
+          </a>
+        </h1>
+
+
+          <div class="kss-description">
+            <p>Elementy, które powtarzają się we wszystkich plikach html i css.</p>
+
+          </div>
+
+
+      </div>
+
+
+        <div class="kss-source kss-style">
+          Source: <code>kss-style.css</code>, line 60
+        </div>
+
+    </div>
+    <section id="kssref-2-1" class="kss-section kss-section--depth-2 ">
+
+      <div class="kss-style">
+        <h2 class="kss-title kss-title--level-2">
+          <a class="kss-title__permalink" href="#kssref-2-1">
+            <span class="kss-title__ref">
+              2.1
+              <span class="kss-title__permalink-hash">
+                  #permalink
+              </span>
+            </span>
+            Navigation Bar
+          </a>
+        </h2>
+
+
+          <div class="kss-description">
+            <h2>Panel nawigacyjny dla wszystkich stron.</h2>
+<p><strong>Kod HTML</strong></p>
+<ul>
+<li><code>&lt;nav class=&quot;navbar&quot; id=&quot;topnav&quot;&gt;</code> - Zawiera logo strony oraz wszystkie łącza nawigacyjne.</li>
+<li><code>&lt;div class=&quot;logo&quot;&gt;</code> - Kontener przechowujący logo.</li>
+<li><code>&lt;ul class=&quot;nav-links&quot;&gt;</code> - Lista nieuporządkowana z łączami nawigacji.</li>
+<li><code>&lt;label for=&quot;checkbox_toggle&quot; class=&quot;hamburger&quot;&gt;</code> - Chcekbox odpowiedzialny za rozwijanie menu (hamburger menu).</li>
+<li><code>&lt;nav class=&quot;menu&quot;&gt;</code> - Kontener zawierający łącza nawigacyjne.</li>
+<li><code>&lt;li&gt;&lt;a href=&quot;\&quot;&gt;</code> - Łącznik nawigacyjny do danej podstrony (przykład).</li>
+</ul>
+<p><strong>Kod CSS</strong></p>
+<ul>
+<li><code>.navbar</code> - Ustawienia kontenera elastycznego, wyśrodkowanie go w pionie oraz przyczepienie go na stałe do góry. Nadaje również kolor oraz cień całego menu.</li>
+<li><code>.nav-links</code> - Ustawienie stylu listy.</li>
+<li><code>.nav-links a</code> - Ustawienie koloru, dekoracji oraz rozmiaru teksu dla łącz nawigacji.</li>
+<li><code>.logo</code> oraz <code>.logo a</code> - Ustawienia sposobu wyświetlania, wysokości, koloru oraz cienia adla loga.</li>
+<li><code>.logo a:hover</code> - Animacja zmiany koloru po najechaniu na logo.</li>
+<li><code>.menu</code>, <code>.menu li</code>, <code>.menu li;hover</code> - Nadanie łączom koloru, rozmiaru oraz animacji po najechaniu.</li>
+<li><code>input[type=checkbox]</code> - Ustawienie checkboxa hamburgera na niewidoczny.</li>
+<li><code>.hamburger</code> - Określenie wyświetlania hamburgera, wielkości i cienia.</li>
+</ul>
+
+          </div>
+
+
+      </div>
+
+
+        <div class="kss-source kss-style">
+          Source: <code>kss-style.css</code>, line 68
+        </div>
+
+    </section>
+    <section id="kssref-2-2" class="kss-section kss-section--depth-2 ">
+
+      <div class="kss-style">
+        <h2 class="kss-title kss-title--level-2">
+          <a class="kss-title__permalink" href="#kssref-2-2">
+            <span class="kss-title__ref">
+              2.2
+              <span class="kss-title__permalink-hash">
+                  #permalink
+              </span>
+            </span>
+            Navigation Bar Example
+          </a>
+        </h2>
+
+          <p class="kss-toolbar">
+              <a href="#kssref-2-2" data-kss-fullscreen="kssref-2-2">
+                <span class="kss-toolbar__tooltip">Toggle full screen</span>
+                <svg focusable="false" aria-hidden="true" class="off" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="100%" height="100%" viewBox="0 0 64 64">
+                  <path class="kss-toolbar__icon-fill" d="M64 0v26l-10-10-12 12-6-6 12-12-10-10zM28 42l-12 12 10 10h-26v-26l10 10 12-12z"></path>
+                </svg>
+                <svg focusable="false" aria-hidden="true" class="on" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="100%" height="100%" viewBox="0 0 64 64">
+                  <path class="kss-toolbar__icon-fill" d="M28 36v26l-10-10-12 12-6-6 12-12-10-10zM64 6l-12 12 10 10h-26v-26l10 10 12-12z"></path>
+                </svg>
+              </a>
+              <a href="item-2-2.html" target="_blank">
+                <span class="kss-toolbar__tooltip">Open in new window</span>
+                <svg focusable="false" aria-hidden="true" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="100%" height="100%" viewBox="0 0 64 64">
+                  <rect x="0" y="20" width="40" height="44" fill="#fff"/>
+                  <path class="kss-toolbar__icon-fill" d="M40,64l-40,0l0,-44l40,0l0,44Zm-36,-40l0,36l32,0l0,-36l-32,0Z"/>
+                  <rect class="kss-toolbar__icon-fill" x="0" y="20" width="40" height="10"/>
+                  <rect x="24" y="0" width="40" height="44" fill="#fff"/>
+                  <path class="kss-toolbar__icon-fill" d="M64,44l-40,0l0,-44l40,0l0,44Zm-36,-40l0,36l32,0l0,-36l-32,0Z"/>
+                  <rect class="kss-toolbar__icon-fill" x="24" y="0" width="40" height="10"/>
+                </svg>
+              </a>
+            <a href="#kssref-2-2" data-kss-guides="true">
+              <span class="kss-toolbar__tooltip">Toggle example guides</span>
+              <svg focusable="false" aria-hidden="true" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="100%" height="100%" viewBox="0 0 64 64">
+                <rect class="kss-toolbar__icon-fill" x="5" y="35" width="5" height="9"/>
+                <rect class="kss-toolbar__icon-fill" x="54" y="21" width="5" height="9"/>
+                <rect class="kss-toolbar__icon-fill" x="54" y="35" width="5" height="9"/>
+                <rect class="kss-toolbar__icon-fill" x="5" y="21" width="5" height="9"/>
+                <rect class="kss-toolbar__icon-fill" x="5" y="0" width="5" height="15"/>
+                <rect class="kss-toolbar__icon-fill" x="35" y="5" width="9" height="5"/>
+                <rect class="kss-toolbar__icon-fill" x="20" y="5" width="9" height="5"/>
+                <rect class="kss-toolbar__icon-fill" x="0" y="5" width="15" height="5"/>
+                <rect class="kss-toolbar__icon-fill" x="54" y="0" width="5" height="15"/>
+                <rect class="kss-toolbar__icon-fill" x="49" y="5" width="15" height="5"/>
+                <rect class="kss-toolbar__icon-fill" x="54" y="49" width="5" height="15"/>
+                <rect class="kss-toolbar__icon-fill" x="49" y="54" width="15" height="5"/>
+                <rect class="kss-toolbar__icon-fill" x="5" y="49" width="5" height="15"/>
+                <rect class="kss-toolbar__icon-fill" x="0" y="54" width="15" height="5"/>
+                <rect class="kss-toolbar__icon-fill" x="35" y="54" width="9" height="5"/>
+                <rect class="kss-toolbar__icon-fill" x="20" y="54" width="9" height="5"/>
+              </svg>
+            </a>
+            <a href="#kssref-2-2" data-kss-markup="true">
+              <span class="kss-toolbar__tooltip">Toggle HTML markup</span>
+              <svg focusable="false" aria-hidden="true" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="100%" height="100%" viewBox="0 0 64 64">
+                <path class="kss-toolbar__icon-fill" d="M37.555,46.239l6.103,6.103l20.342,-20.342l-20.342,-20.342l-6.103,6.103l14.24,14.239l-14.24,14.239Z"/>
+                <path class="kss-toolbar__icon-fill" d="M26.445,17.761l-6.103,-6.103l-20.342,20.342l20.342,20.342l6.103,-6.103l-14.24,-14.239l14.24,-14.239Z"/>
+              </svg>
+            </a>
+          </p>
+
+
+
+      </div>
+
+        <div class="kss-modifier__wrapper">
+          <div class="kss-modifier__heading kss-style">
+            Example
+          </div>
+
+
+          <div class="kss-modifier__example">
+                    <header>
+        <!-- NAVBAR -->
+        <nav class="navbar" id="topnav">
+            <!-- LOGO -->
+            <div class="logo">
+                <a href="index.html"><img src="images/icons/paw-print.png" alt="paw-print" width="32" height="32">Cats
+                    Blog</a>
+            </div>
+            <!-- NAVIGATION MENU -->
+            <ul class="nav-links">
+                <!-- CHECKBOX HAMBURGER -->
+                <input type="checkbox" id="checkbox_toggle" />
+                <label for="checkbox_toggle" class="hamburger">&#9776;</label>
+                <!-- LINKS MENU -->
+                <nav class="menu">
+                    <li><a href="index.html"><img src="images/icons/home.png" alt="home" width="20" height="20">
+                            Home</a></li>
+                    <li><a href="article.html"><img src="images/icons/article.png" alt="about" width="20" height="20">
+                            Article</a>
+                    </li>
+                    <li><a href="gallery.html"><img src="images/icons/gallery.png" alt="gallery" width="20" height="20">
+                            Gallery</a></li>
+                    <li><a href="contact.html"><img src="images/icons/contact-mail.png" alt="contact-mail" width="20" height="20">
+                            Contact</a></li>
+                    <li><a href="FAQ.html"><img src="images/icons/faq.png" alt="faq" width="20" height="20"> FAQ</a></li>
+                    <nav>
+            </ul>
+        </nav>
+    </header>
+            <div class="kss-modifier__example-footer"></div>
+          </div>
+
+        </div>
+
+          <details class="kss-markup kss-style">
+            <summary>
+                Markup
+            </summary>
+            <pre class="hljs"><code class="language-handlebars"><span class="xml">        <span class="hljs-tag">&lt;<span class="hljs-name">header</span>&gt;</span>
+        <span class="hljs-comment">&lt;!-- NAVBAR --&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">nav</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;navbar&quot;</span> <span class="hljs-attr">id</span>=<span class="hljs-string">&quot;topnav&quot;</span>&gt;</span>
+            <span class="hljs-comment">&lt;!-- LOGO --&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;logo&quot;</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;index.html&quot;</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">img</span> <span class="hljs-attr">src</span>=<span class="hljs-string">&quot;images/icons/paw-print.png&quot;</span> <span class="hljs-attr">alt</span>=<span class="hljs-string">&quot;paw-print&quot;</span> <span class="hljs-attr">width</span>=<span class="hljs-string">&quot;32&quot;</span> <span class="hljs-attr">height</span>=<span class="hljs-string">&quot;32&quot;</span>&gt;</span>Cats
+                    Blog<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+            <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+            <span class="hljs-comment">&lt;!-- NAVIGATION MENU --&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">ul</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;nav-links&quot;</span>&gt;</span>
+                <span class="hljs-comment">&lt;!-- CHECKBOX HAMBURGER --&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">input</span> <span class="hljs-attr">type</span>=<span class="hljs-string">&quot;checkbox&quot;</span> <span class="hljs-attr">id</span>=<span class="hljs-string">&quot;checkbox_toggle&quot;</span> /&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">label</span> <span class="hljs-attr">for</span>=<span class="hljs-string">&quot;checkbox_toggle&quot;</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;hamburger&quot;</span>&gt;</span><span class="hljs-symbol">&amp;#9776;</span><span class="hljs-tag">&lt;/<span class="hljs-name">label</span>&gt;</span>
+                <span class="hljs-comment">&lt;!-- LINKS MENU --&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">nav</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;menu&quot;</span>&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;index.html&quot;</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">img</span> <span class="hljs-attr">src</span>=<span class="hljs-string">&quot;images/icons/home.png&quot;</span> <span class="hljs-attr">alt</span>=<span class="hljs-string">&quot;home&quot;</span> <span class="hljs-attr">width</span>=<span class="hljs-string">&quot;20&quot;</span> <span class="hljs-attr">height</span>=<span class="hljs-string">&quot;20&quot;</span>&gt;</span>
+                            Home<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;article.html&quot;</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">img</span> <span class="hljs-attr">src</span>=<span class="hljs-string">&quot;images/icons/article.png&quot;</span> <span class="hljs-attr">alt</span>=<span class="hljs-string">&quot;about&quot;</span> <span class="hljs-attr">width</span>=<span class="hljs-string">&quot;20&quot;</span> <span class="hljs-attr">height</span>=<span class="hljs-string">&quot;20&quot;</span>&gt;</span>
+                            Article<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+                    <span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;gallery.html&quot;</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">img</span> <span class="hljs-attr">src</span>=<span class="hljs-string">&quot;images/icons/gallery.png&quot;</span> <span class="hljs-attr">alt</span>=<span class="hljs-string">&quot;gallery&quot;</span> <span class="hljs-attr">width</span>=<span class="hljs-string">&quot;20&quot;</span> <span class="hljs-attr">height</span>=<span class="hljs-string">&quot;20&quot;</span>&gt;</span>
+                            Gallery<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;contact.html&quot;</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">img</span> <span class="hljs-attr">src</span>=<span class="hljs-string">&quot;images/icons/contact-mail.png&quot;</span> <span class="hljs-attr">alt</span>=<span class="hljs-string">&quot;contact-mail&quot;</span> <span class="hljs-attr">width</span>=<span class="hljs-string">&quot;20&quot;</span> <span class="hljs-attr">height</span>=<span class="hljs-string">&quot;20&quot;</span>&gt;</span>
+                            Contact<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;FAQ.html&quot;</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">img</span> <span class="hljs-attr">src</span>=<span class="hljs-string">&quot;images/icons/faq.png&quot;</span> <span class="hljs-attr">alt</span>=<span class="hljs-string">&quot;faq&quot;</span> <span class="hljs-attr">width</span>=<span class="hljs-string">&quot;20&quot;</span> <span class="hljs-attr">height</span>=<span class="hljs-string">&quot;20&quot;</span>&gt;</span> FAQ<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-name">nav</span>&gt;</span>
+            <span class="hljs-tag">&lt;/<span class="hljs-name">ul</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-name">nav</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">header</span>&gt;</span></span></code></pre>
+          </details>
+
+        <div class="kss-source kss-style">
+          Source: <code>kss-style.css</code>, line 93
+        </div>
+
+    </section>
+    <section id="kssref-2-3" class="kss-section kss-section--depth-2 ">
+
+      <div class="kss-style">
+        <h2 class="kss-title kss-title--level-2">
+          <a class="kss-title__permalink" href="#kssref-2-3">
+            <span class="kss-title__ref">
+              2.3
+              <span class="kss-title__permalink-hash">
+                  #permalink
+              </span>
+            </span>
+            Footer
+          </a>
+        </h2>
+
+
+          <div class="kss-description">
+            <p>Stopka dla wszystkich stron.
+<strong>Kod HTML</strong></p>
+<ul>
+<li><code>&lt;footer&gt;</code> - Stopka stro.</li>
+<li><code>&lt;section class=&quot;social-bar&quot;&gt;</code> - Sekcja przechowująca icony do social mediów.</li>
+<li><code>&lt;a href=&quot;&quot; class=&quot;icons-social&quot;&gt;</code> - Linki z zdjęciami social mediów.</li>
+</ul>
+<p><strong>Kod CSS</strong></p>
+<ul>
+<li><code>footer</code> - Ustawienie pozycji, koloru, szerokości oraz wyśrodkowanie zawartośći.</li>
+<li><code>.social-bar</code>, <code>.social-bar h4</code>, <code>.icons-social</code> - Nadanie koloru teksu, ustawienie marginesów.</li>
+</ul>
+
+          </div>
+
+
+      </div>
+
+
+        <div class="kss-source kss-style">
+          Source: <code>kss-style.css</code>, line 130
+        </div>
+
+    </section>
+    <section id="kssref-2-4" class="kss-section kss-section--depth-2 ">
+
+      <div class="kss-style">
+        <h2 class="kss-title kss-title--level-2">
+          <a class="kss-title__permalink" href="#kssref-2-4">
+            <span class="kss-title__ref">
+              2.4
+              <span class="kss-title__permalink-hash">
+                  #permalink
+              </span>
+            </span>
+            Footer Example
+          </a>
+        </h2>
+
+          <p class="kss-toolbar">
+              <a href="#kssref-2-4" data-kss-fullscreen="kssref-2-4">
+                <span class="kss-toolbar__tooltip">Toggle full screen</span>
+                <svg focusable="false" aria-hidden="true" class="off" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="100%" height="100%" viewBox="0 0 64 64">
+                  <path class="kss-toolbar__icon-fill" d="M64 0v26l-10-10-12 12-6-6 12-12-10-10zM28 42l-12 12 10 10h-26v-26l10 10 12-12z"></path>
+                </svg>
+                <svg focusable="false" aria-hidden="true" class="on" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="100%" height="100%" viewBox="0 0 64 64">
+                  <path class="kss-toolbar__icon-fill" d="M28 36v26l-10-10-12 12-6-6 12-12-10-10zM64 6l-12 12 10 10h-26v-26l10 10 12-12z"></path>
+                </svg>
+              </a>
+              <a href="item-2-4.html" target="_blank">
+                <span class="kss-toolbar__tooltip">Open in new window</span>
+                <svg focusable="false" aria-hidden="true" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="100%" height="100%" viewBox="0 0 64 64">
+                  <rect x="0" y="20" width="40" height="44" fill="#fff"/>
+                  <path class="kss-toolbar__icon-fill" d="M40,64l-40,0l0,-44l40,0l0,44Zm-36,-40l0,36l32,0l0,-36l-32,0Z"/>
+                  <rect class="kss-toolbar__icon-fill" x="0" y="20" width="40" height="10"/>
+                  <rect x="24" y="0" width="40" height="44" fill="#fff"/>
+                  <path class="kss-toolbar__icon-fill" d="M64,44l-40,0l0,-44l40,0l0,44Zm-36,-40l0,36l32,0l0,-36l-32,0Z"/>
+                  <rect class="kss-toolbar__icon-fill" x="24" y="0" width="40" height="10"/>
+                </svg>
+              </a>
+            <a href="#kssref-2-4" data-kss-guides="true">
+              <span class="kss-toolbar__tooltip">Toggle example guides</span>
+              <svg focusable="false" aria-hidden="true" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="100%" height="100%" viewBox="0 0 64 64">
+                <rect class="kss-toolbar__icon-fill" x="5" y="35" width="5" height="9"/>
+                <rect class="kss-toolbar__icon-fill" x="54" y="21" width="5" height="9"/>
+                <rect class="kss-toolbar__icon-fill" x="54" y="35" width="5" height="9"/>
+                <rect class="kss-toolbar__icon-fill" x="5" y="21" width="5" height="9"/>
+                <rect class="kss-toolbar__icon-fill" x="5" y="0" width="5" height="15"/>
+                <rect class="kss-toolbar__icon-fill" x="35" y="5" width="9" height="5"/>
+                <rect class="kss-toolbar__icon-fill" x="20" y="5" width="9" height="5"/>
+                <rect class="kss-toolbar__icon-fill" x="0" y="5" width="15" height="5"/>
+                <rect class="kss-toolbar__icon-fill" x="54" y="0" width="5" height="15"/>
+                <rect class="kss-toolbar__icon-fill" x="49" y="5" width="15" height="5"/>
+                <rect class="kss-toolbar__icon-fill" x="54" y="49" width="5" height="15"/>
+                <rect class="kss-toolbar__icon-fill" x="49" y="54" width="15" height="5"/>
+                <rect class="kss-toolbar__icon-fill" x="5" y="49" width="5" height="15"/>
+                <rect class="kss-toolbar__icon-fill" x="0" y="54" width="15" height="5"/>
+                <rect class="kss-toolbar__icon-fill" x="35" y="54" width="9" height="5"/>
+                <rect class="kss-toolbar__icon-fill" x="20" y="54" width="9" height="5"/>
+              </svg>
+            </a>
+            <a href="#kssref-2-4" data-kss-markup="true">
+              <span class="kss-toolbar__tooltip">Toggle HTML markup</span>
+              <svg focusable="false" aria-hidden="true" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="100%" height="100%" viewBox="0 0 64 64">
+                <path class="kss-toolbar__icon-fill" d="M37.555,46.239l6.103,6.103l20.342,-20.342l-20.342,-20.342l-6.103,6.103l14.24,14.239l-14.24,14.239Z"/>
+                <path class="kss-toolbar__icon-fill" d="M26.445,17.761l-6.103,-6.103l-20.342,20.342l20.342,20.342l6.103,-6.103l-14.24,-14.239l14.24,-14.239Z"/>
+              </svg>
+            </a>
+          </p>
+
+
+
+      </div>
+
+        <div class="kss-modifier__wrapper">
+          <div class="kss-modifier__heading kss-style">
+            Example
+          </div>
+
+
+          <div class="kss-modifier__example">
+                <footer>
+        <section class="social-bar">
+            <h4>Follow us on various social media:</h4>
+            <br>
+            <div>
+                <a href="" class="icons-social"><img src="images/social-media/facebook.png" alt="facebook"
+                        width="40px"></a>
+                <a href="" class="icons-social"><img src="images/social-media/instagram.png" alt="instagram"
+                        width="40px"></a>
+                <a href="" class="icons-social"><img src="images/social-media/twitter.png" alt="twitter"
+                        width="40px"></a>
+                <a href="" class="icons-social"><img src="images/social-media/tik-tok.png" alt="tik-tok"
+                        width="40px"></a>
+            </div>
+        </section>
+        <p>© 2023 Cats Blog.&nbsp;All rights reserved.</p>
+    </footer>
+            <div class="kss-modifier__example-footer"></div>
+          </div>
+
+        </div>
+
+          <details class="kss-markup kss-style">
+            <summary>
+                Markup
+            </summary>
+            <pre class="hljs"><code class="language-handlebars"><span class="xml">    <span class="hljs-tag">&lt;<span class="hljs-name">footer</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">section</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;social-bar&quot;</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">h4</span>&gt;</span>Follow us on various social media:<span class="hljs-tag">&lt;/<span class="hljs-name">h4</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">br</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">div</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;&quot;</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;icons-social&quot;</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">img</span> <span class="hljs-attr">src</span>=<span class="hljs-string">&quot;images/social-media/facebook.png&quot;</span> <span class="hljs-attr">alt</span>=<span class="hljs-string">&quot;facebook&quot;</span>
+                        <span class="hljs-attr">width</span>=<span class="hljs-string">&quot;40px&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;&quot;</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;icons-social&quot;</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">img</span> <span class="hljs-attr">src</span>=<span class="hljs-string">&quot;images/social-media/instagram.png&quot;</span> <span class="hljs-attr">alt</span>=<span class="hljs-string">&quot;instagram&quot;</span>
+                        <span class="hljs-attr">width</span>=<span class="hljs-string">&quot;40px&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;&quot;</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;icons-social&quot;</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">img</span> <span class="hljs-attr">src</span>=<span class="hljs-string">&quot;images/social-media/twitter.png&quot;</span> <span class="hljs-attr">alt</span>=<span class="hljs-string">&quot;twitter&quot;</span>
+                        <span class="hljs-attr">width</span>=<span class="hljs-string">&quot;40px&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;&quot;</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;icons-social&quot;</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">img</span> <span class="hljs-attr">src</span>=<span class="hljs-string">&quot;images/social-media/tik-tok.png&quot;</span> <span class="hljs-attr">alt</span>=<span class="hljs-string">&quot;tik-tok&quot;</span>
+                        <span class="hljs-attr">width</span>=<span class="hljs-string">&quot;40px&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+            <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-name">section</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>© 2023 Cats Blog.<span class="hljs-symbol">&amp;nbsp;</span>All rights reserved.<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">footer</span>&gt;</span></span></code></pre>
+          </details>
+
+        <div class="kss-source kss-style">
+          Source: <code>kss-style.css</code>, line 146
+        </div>
+
+    </section>
+</article>
+</main>
+
+<!-- SCRIPTS -->
+<script src="kss-assets/kss.js"></script>
+<script src="kss-assets/scrollspy.js"></script>
+<script src="kss-assets/kss-fullscreen.js"></script>
+<script src="kss-assets/kss-guides.js"></script>
+<script src="kss-assets/kss-markup.js"></script>
+<script>
+  var spy = new ScrollSpy('#kss-node', {
+    nav: '.kss-nav__menu-child > li > a',
+    className: 'is-in-viewport'
+  });
+  var kssFullScreen = new KssFullScreen({
+    idPrefix: 'kss-fullscreen-',
+    bodyClass: 'kss-fullscreen-mode',
+    elementClass: 'is-fullscreen'
+  });
+  var kssGuides = new KssGuides({
+    bodyClass: 'kss-guides-mode'
+  });
+  var kssMarkup = new KssMarkup({
+    bodyClass: 'kss-markup-mode',
+    detailsClass: 'kss-markup'
+  });
+</script>
+
+
+
+<!-- Automatically built using <a href="https://github.com/kss-node/kss-node">kss-node</a>. -->
+</body>
+</html>
