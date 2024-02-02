@@ -50,9 +50,6 @@ header {
     text-shadow: 1px 1px 2px #b1b1b1;
 }
 
-/* ----------------------------------------------- */
-
-/* LOGO */
 .logo {
     display: flex;
     line-height: 40px;
@@ -74,9 +71,6 @@ header {
     transition: 0.3s ease;
 }
 
-/* ----------------------------------------------- */
-
-/* NAVBAR MENU */
 .menu {
     display: flex;
     gap: 2px;
@@ -93,16 +87,10 @@ header {
     padding: 4px 14px;
 }
 
-/* ----------------------------------------------- */
-
-/* CHECKBOX HAMBURGER */
 input[type=checkbox] {
     display: none;
 }
 
-/* ----------------------------------------------- */
-
-/* HAMBURGER MENU */
 .hamburger {
     display: none;
     font-size: 24px;
@@ -110,9 +98,6 @@ input[type=checkbox] {
     user-select: none;
 }
 
-/* ----------------------------------------------- */
-
-/* MAIN CONTENT */
 main {
     flex: 1;
 }

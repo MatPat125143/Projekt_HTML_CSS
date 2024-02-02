@@ -111,10 +111,8 @@
             
                         summary.addEventListener('click', function () {
                             if (item.open) {
-                                // Jeśli element jest otwarty, ustaw max-height na 0, aby schować zawartość
                                 paragraph.style.maxHeight = '0';
                             } else {
-                                // W przeciwnym razie ustaw max-height na pełną wysokość, aby zjechać w dół
                                 paragraph.style.maxHeight = paragraph.scrollHeight + 'px';
                             }
                         });

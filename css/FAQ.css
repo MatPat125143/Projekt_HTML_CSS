@@ -21,7 +21,6 @@ header {
     padding: 0;
 }
 
-/* NAVBAR STYLING */
 .navbar {
     display: flex;
     z-index: 2;
@@ -50,9 +49,6 @@ header {
     text-shadow: 1px 1px 2px #b1b1b1;
 }
 
-/* ----------------------------------------------- */
-
-/* LOGO */
 .logo {
     display: flex;
     line-height: 40px;
@@ -74,9 +70,6 @@ header {
     transition: 0.3s ease;
 }
 
-/* ----------------------------------------------- */
-
-/* NAVBAR MENU */
 .menu {
     display: flex;
     gap: 2px;
@@ -93,25 +86,17 @@ header {
     padding: 4px 14px;
 }
 
-/* ----------------------------------------------- */
-
-/* CHECKBOX HAMBURGER */
 input[type=checkbox] {
     display: none;
 }
 
-/* ----------------------------------------------- */
-
-/* HAMBURGER MENU */
 .hamburger {
     display: none;
     font-size: 24px;
     text-shadow: 1px 1px 2px #b1b1b1;
     user-select: none;
 }
-/* ----------------------------------------------- */
 
-/* MAIN CONTENT */
 main {
     flex: 1;
 }
@@ -179,7 +164,6 @@ main {
     margin-bottom: 5px;
   }
 
-/* FOOTER */
 footer {
     position: relative;
     bottom: 0;
@@ -192,12 +176,8 @@ footer {
     color: #fff;
 }
 
-
-
-/* MEDIA QUERIES 850px*/
 @media (max-width: 850px) {
 
-    /* NAVBAR MENU */
     .menu {
         display: none;
         position: absolute;
@@ -220,17 +200,11 @@ footer {
         margin-top: 10px;
     }
 
-    /* ----------------------------------------------- */
-
-    /* CHECKBOX HAMBURGER */
     input[type=checkbox]:checked~.menu {
         display: block;
         box-shadow: 0px 3px 2px rgb(84, 95, 107);
     }
 
-    /* ----------------------------------------------- */
-
-    /* HAMBURGER MENU */
     .hamburger {
         display: block;
     }
@@ -249,7 +223,6 @@ footer {
 
 @media (max-width: 450px) {
 
-    /* NAVBAR MENU */
     .menu {
         display: none;
         position: absolute;
@@ -273,21 +246,12 @@ footer {
         margin-top: 10px;
     }
 
-    /* ----------------------------------------------- */
-
-    /* CHECKBOX HAMBURGER */
     input[type=checkbox]:checked~.menu {
         display: block;
         box-shadow: 0px 3px 2px rgb(84, 95, 107);
     }
 
-    /* ----------------------------------------------- */
-
-    /* HAMBURGER MENU */
     .hamburger {
         display: block;
     }
-
-    /* ----------------------------------------------- */
-
 }
